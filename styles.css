@@ -1,0 +1,136 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Page Layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5052da;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+.left-img {
+    width: 150px;
+    height: auto;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+.right-img{
+    width: 150px;
+    height: 180px;
+    background-color: white;
+    border-radius: 150%;
+    margin-right: 10PX;
+    
+}
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1px;
+}
+header h3 {
+    font-size: 1rem;
+    margin-bottom: 1px;
+    font-weight: normal;
+}
+
+header h4 {
+    font-size: 1rem;
+    margin-bottom: 1px;
+    font-weight: normal;
+}
+header p {
+    font-size: 1.2rem;
+}
+
+/* Rules Section */
+.rules-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.rule-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rule-item h2 {
+    font-size: 1.6rem;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.rule-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.rule-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+   /* text-align: center; */
+    padding: 20px 0;
+    font-size: 1.2rem;
+}
+footer h1{
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-align: center;
+}
+footer p{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .rule-item {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .rule-item {
+        width: 100%;
+    }
+}
