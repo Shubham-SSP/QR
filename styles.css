@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #6e99eb;
+}
+
+.left-img, .right-img {
+    max-width: 150px;
+    border-radius: 100%;
+    background-color: #fafafa;
+}
+
+.header-content {
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Section Styles */
+.rules-container {
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+.rule-item {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Styles (Mobile First Approach) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-img, .right-img {
+        max-width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .header-content h3, .header-content h1, .header-content h4, .header-content h2, .header-content p {
+        font-size: 14px;
+    }
+
+    .rules-container {
+        padding: 10px;
+    }
+
+    .rule-item {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+/* Larger screen styles */
+@media (min-width: 769px) {
+    .rule-item {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
