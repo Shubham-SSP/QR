@@ -47,7 +47,10 @@ header {
     padding: 20px;
     background-color: #fafafa;
 }
-
+.rules-container {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
 .rule-item {
     margin-bottom: 20px;
     background-color: #fff;
